@@ -34,3 +34,19 @@ type Order = {
     items : Item[];
     address : Address;
 }
+
+type Chai = {
+    name : string;
+    price : number;
+    isHot : boolean;
+}
+
+const updateChai = (updates : Partial<Chai>) => {
+    console.log("updating chai with",updates);
+}
+updateChai({price : 30}); // this is allowed because we are using Partial<Chai> which makes all the properties of Chai optional. So we can pass only the properties that we want to update.
+
+// ohter object types 
+// Required : sabhi properties deni hogi
+// Pick : koi sepecific properties hi pick krni ho
+// Omit : koi spwcific proerty jo hmme nhi deni hai
