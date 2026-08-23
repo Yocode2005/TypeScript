@@ -30,3 +30,16 @@ interface CupSize{
 class chai implements CupSize{
     size : "small" | "large" = "small";
 }
+
+// note : class ke liye type ki jga interface hi bnana hai
+
+
+type BaseChai = {teaLeaves : number}
+type Extra = {masala : number}
+
+type masalaChai = BaseChai & Extra; // intersection type
+
+const cup : masalaChai = {
+    teaLeaves : 10,
+    masala : 5
+}
