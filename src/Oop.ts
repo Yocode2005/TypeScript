@@ -31,3 +31,11 @@ class Branch extends Shop {
         return this.shopeName
     }
 }
+
+class Cup{
+    readonly capacity : number = 250 // redonly mean ek bar assign kr skte eske bad change nhi kr skte
+
+    constructor(capacity : number){
+        this.capacity = capacity
+    }
+}
