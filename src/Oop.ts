@@ -10,3 +10,15 @@
 
 // const masalaChai = new Chai("Ginger",20);
 // masalaChai.flavour = "masala"
+
+class Chai {
+    public flavour : string = "Masala"
+
+    private secretIngredient = "Cardamom"
+
+    reveal(){ 
+        return this.secretIngredient
+    }
+
+}
+
