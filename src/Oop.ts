@@ -22,3 +22,12 @@ class Chai {
 
 }
 
+class Shop{
+      protected shopeName =  "Chai corner"
+}
+
+class Branch extends Shop {
+    getName(){
+        return this.shopeName
+    }
+}
