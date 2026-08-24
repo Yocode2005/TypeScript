@@ -33,9 +33,22 @@ class Branch extends Shop {
 }
 
 class Cup{
-    readonly capacity : number = 250 // redonly mean ek bar assign kr skte eske bad change nhi kr skte
+    readonly capacity : number = 250 // redonly mean ek bar assign kr skte eske bad change nhi kr skte 
 
     constructor(capacity : number){
         this.capacity = capacity
+    }
+}
+
+class ModernChai{
+    private _sugar = 2
+
+    get sugar(){
+        return this._sugar
+    }
+
+    set sugar(value:number){
+        if(value>5) throw new Error("Too sweet");
+        this._sugar = value
     }
 }
