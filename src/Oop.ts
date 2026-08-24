@@ -52,3 +52,22 @@ class ModernChai{
         this._sugar = value
     }
 }
+
+const c = new ModernChai()
+c.sugar = 3;
+
+class EkChai{
+    static shopName = "ChaiCode caffe"
+    constructor(public flavour : string){}
+}
+console.log(EkChai.shopName);
+
+abstract class Drink{
+    abstract make() : void
+}
+
+class MyChai extends Drink{
+    make(){
+        console.log("Brewing chai");
+    }
+}
