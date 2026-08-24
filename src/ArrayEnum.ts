@@ -33,3 +33,25 @@ const location  : readonly [number,number] = [28.66,32.22];
 
 const chaiItems : [name : string, price : number] = ["Masala",25];
 
+enum CupSize {
+    SMALL,
+    MEDIUM,
+    LARGE
+}
+
+const size = CupSize.LARGE
+enum status{
+    PENDING  = 100,
+    SMALL , // Automaticaaly 101
+    CANCELLED,// Automaticaaly 102
+}
+
+enum ChaiType{
+    MASALA = "masala",
+    GINGER = "ginger"
+}
+
+function makeChai(type : ChaiType){
+    console.log(`Making : ${type}`);
+}
+makeChai(ChaiType.GINGER);
