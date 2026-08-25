@@ -58,3 +58,8 @@ const u : user = {
     age : 21
 }
 
+// we can extends the interface also
+interface A {a : string}
+interface B{b : string}
+
+interface C extends A,B {}
