@@ -12,3 +12,9 @@ function pair<A,B>(a : A, b: B) : [A,B]{
 pair("masala", 20);
 pair("masala",{flavour : "ginger"})
 
+// generic interfaces
+interface Box<T>{
+    content : T
+}
+const numberBox : Box<number> = {content : 10}
+const numberBoxCup : Box<string> = {content : "10"};
