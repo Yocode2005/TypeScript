@@ -22,3 +22,6 @@ const s : shop = {id : 1, name : "meena caffe"}
 interface DiscountCalculator{ // interafce me functionality add nhi kr skte
     (price : number) : number
 }
+const apply50 : DiscountCalculator = (p) => p*0.5;
+
+// define methods in interface
