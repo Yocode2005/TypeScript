@@ -16,3 +16,9 @@ interface shop{
     name : string
 }
 const s : shop = {id : 1, name : "meena caffe"}
+
+// function with interface
+
+interface DiscountCalculator{ // interafce me functionality add nhi kr skte
+    (price : number) : number
+}
