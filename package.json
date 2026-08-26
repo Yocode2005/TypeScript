@@ -2,7 +2,7 @@
   "name": "typescript",
   "version": "1.0.0",
   "main": "index.js",
-  "type" : "module",
+  "type": "module",
   "scripts": {
     "start": "node dist/index.js",
     "dev": "npx tsc"
@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/axios": "^0.9.36",
     "typescript": "^7.0.2"
   },
   "dependencies": {
