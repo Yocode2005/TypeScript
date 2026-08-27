@@ -5,10 +5,19 @@ interface OrderFormProps{
 }
 
 export function OrderForm({onSubmit} : OrderFormProps){
-    const [name,steName] = useState<string>("Masala")
-    const [cups,setCups] = useState<number>(1)
+    const [name,steName] = useState<string>("Masala");
+    const [cups,setCups] = useState<number>(1);
 
     return (
-        <div>OrderForm</div>
+        <form onSubmit={handleSubmit}>
+            <label>Chai Name</label>
+            <input
+            value={name}
+            onChange={(e : React.ChangeEvent<HTMLInputElement>) =>
+                steName(e.target.value)
+            }
+             />
+
+        </form>
     )
 }
