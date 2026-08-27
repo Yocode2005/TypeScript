@@ -8,7 +8,7 @@ function App() {
         <h1>Vite + React</h1>
         <ChaiCard 
         name="Headphones"
-        price="5000"
+        price={5000}
         />
       </div>
     </>
