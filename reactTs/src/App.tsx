@@ -10,6 +10,10 @@ function App() {
         name="Headphones"
         price={5000}
         />
+        <ChaiCard 
+        name="Iphone"
+        price={80000}
+        />
       </div>
     </>
   )
