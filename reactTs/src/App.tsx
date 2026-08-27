@@ -1,6 +1,15 @@
 import './App.css'
 import { ChaiCard } from './components/ChaiCard.tsx'
+import ChaiList from './components/ChaiList.tsx'
 import { Counter } from './components/Counter.tsx'
+
+import type { Chai } from './types.ts'
+
+const menu : Chai[] = [
+  {id: 1, name: "Masala", price : 30},
+  {id : 2, name: "Ginger", price: 50},
+  {id: 3, name : "Lemon", price : 60}
+]
 
 function App() {
   return (
@@ -18,6 +27,9 @@ function App() {
       </div>
       <div>
         <Counter />
+      </div>
+      <div>
+        <ChaiList items={menu} />
       </div>
     </>
   )
